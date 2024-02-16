@@ -165,6 +165,8 @@ function autoclaimreward()
                                 local args = {[1] = 12}
                                 game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Redeem Free Gift"):InvokeServer(unpack(args))
                                 wait(1)
+                                print("hi")
+                                wait(1)
             end
     end)
 end
