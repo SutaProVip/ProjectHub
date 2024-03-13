@@ -1,8 +1,8 @@
 spawn(function()
-        require(game.ReplicatedStorage.Notification).new("<Color=Red> Welcome To Boost Fps <Color=/>"):Display()
+        require(game.ReplicatedStorage.Notification).new("<Color=Red> Boost Fps For Farm Được Code Bởi @ultimate.umi <Color=/>"):Display()
 end)
 task.spawn(function()
-        require(game.ReplicatedStorage.Notification).new("<Color=Yellow> Boost Fps For Farm Được Code Bởi @ultimate.umi <Color=/>"):Display()
+        require(game.ReplicatedStorage.Notification).new("<Color=Yellow> Welcome To Script Boost Fps <Color=/>"):Display()
 end)
 task.spawn(function()
         for i,v in next, workspace:GetDescendants() do
