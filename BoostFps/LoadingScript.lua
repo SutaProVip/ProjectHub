@@ -1,12 +1,8 @@
-if game.Place.Id == 7449423635 then
+if game.PlaceId == 7449423635 then
         if _G.Team == Pirates then
-                spawn(function()
-                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam","Pirates")
-                end)
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam","Pirates")
         elseif _G.Team == Marines then
-                spawn(function()
-                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam","Marines")
-                end)
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam","Marines")
         end
 end
         
