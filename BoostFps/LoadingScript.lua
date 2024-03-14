@@ -1,8 +1,30 @@
-spawn(function()
-        require(game.ReplicatedStorage.Notification).new("<Color=Red> Boost Fps For Farm Được Code Bởi @ultimate.umi <Color=/>"):Display()
+if game.Place.Id == 7449423635 then
+        if _G.Team == Pirates then
+                spawn(function()
+                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam","Pirates")
+                end)
+        elseif _G.Team == Marines then
+                spawn(function()
+                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam","Marines")
+                end)
+        end
+end
+        
+-- Create a ScreenGui to hold the black screen
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+-- Create an ImageLabel to cover the screen
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Size = UDim2.new(1, 0, 1, 0)
+imageLabel.Position = UDim2.new(0, 0, 0, 0)
+imageLabel.BackgroundColor3 = Color3.new(0, 0, 0) -- Set the background color to black
+imageLabel.Parent = screenGui
+task.spawn(function()
+        require(game.ReplicatedStorage.Notification).new("<Color=Red> Welcome To Boost Fps <Color=/>"):Display()
 end)
 task.spawn(function()
-        require(game.ReplicatedStorage.Notification).new("<Color=Yellow> Welcome To Script Boost Fps <Color=/>"):Display()
+        require(game.ReplicatedStorage.Notification).new("<Color=Yellow> Boost Fps For Farm Được Code Bởi @ultimate.umi <Color=/>"):Display()
 end)
 task.spawn(function()
         for i,v in next, workspace:GetDescendants() do
