@@ -41,12 +41,21 @@ wait(0.0001)
 local args = {[1] = "SummonOne",[2] = "Special"}
 game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
 wait(1)
-  local args = {[1] = "Unit Collector II"}
-game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Quests"):WaitForChild("ClaimQuest"):FireServer(unpack(args))
-wait(0.0001)
 local args = {[1] = "SummonOne",[2] = "Special"}
 game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
 wait(1)
+local args = {[1] = "SummonOne",[2] = "Special"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
+wait(1)
+local args = {[1] = "SummonOne",[2] = "Special"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
+wait(1)
+local args = {[1] = "SummonOne",[2] = "Special"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
+wait(1)
+local args = {[1] = "Daily Summoning I"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Quests"):WaitForChild("ClaimQuest"):FireServer(unpack(args))
+wait(0.0001)
 local args = {[1] = "SummonOne",[2] = "Special"}
 game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
 wait(1)
