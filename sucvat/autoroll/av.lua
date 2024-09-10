@@ -14,6 +14,21 @@ wait(0.0001)
   local args = {[1] = "Toggle", [2] = "SkipSummonAnimation"}
 game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Settings"):WaitForChild("SettingsEvent"):FireServer(unpack(args))
 wait(0.0001)
+local args = {[1] = "10MVISITS"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("CodesEvent"):FireServer(unpack(args))
+wait(0.00001)
+local args = {[1] = "300KLIKES"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("CodesEvent"):FireServer(unpack(args))
+wait(0.00001)
+local args = {[1] = "200KLIKES"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("CodesEvent"):FireServer(unpack(args))
+wait(0.00001)
+local args = {[1] = "100KLIKES"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("CodesEvent"):FireServer(unpack(args))
+wait(0.00001)
+local args = {[1] = "10KLIKES"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("CodesEvent"):FireServer(unpack(args))
+wait(0.00001)
 local args = {[1] = "RELEASE"}
 game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("CodesEvent"):FireServer(unpack(args))
 wait(0.00001)
@@ -22,7 +37,22 @@ game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Co
 wait(0.00001)
 local args = {[1] = "SummonTen",[2] = "Special"}
 game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
-wait(3)
+wait(1)
+local args = {[1] = "SummonTen",[2] = "Special"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
+wait(1)
+local args = {[1] = "SummonTen",[2] = "Special"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
+wait(1)
+local args = {[1] = "SummonTen",[2] = "Special"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
+wait(1)
+local args = {[1] = "SummonTen",[2] = "Special"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
+wait(1)
+local args = {[1] = "SummonTen",[2] = "Special"}
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
+wait(1)
 local args = {[1] = "SummonTen",[2] = "Special"}
 game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("Units"):WaitForChild("SummonEvent"):FireServer(unpack(args))
 wait(0.00001)
