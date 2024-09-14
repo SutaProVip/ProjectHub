@@ -73,11 +73,24 @@ function toggleRoll()
 end
 local screenGui = Instance.new("ScreenGui")
 local toggleButton = Instance.new("TextButton")
+local isToggled = false -- Biến để theo dõi trạng thái của nút
 screenGui.Parent = game.CoreGui
 toggleButton.Parent = screenGui
-toggleButton.Text = "Toggle Roll"
-toggleButton.Size = UDim2.new(0, 200, 0, 50)
+toggleButton.Text = "Auto-roll"
+toggleButton.Size = UDim2.new(0, 50, 0, 30)
 toggleButton.Position = UDim2.new(0.5, -100, 0.9, -25)
+-- Màu ban đầu (trạng thái tắt)
+toggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Đỏ
 toggleButton.MouseButton1Click:Connect(function()
+  isToggled = not isToggled -- Đổi trạng thái khi nút được ấn
   toggleRoll()
+if isToggled then
+  -- Nếu trạng thái bật
+  toggleButton.Text = "Auto-roll On"
+  toggleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Xanh lục
+else
+  -- Nếu trạng thái tắt
+  toggleButton.Text = "Auto-roll Off"
+  toggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Đỏ
+ end
 end)
