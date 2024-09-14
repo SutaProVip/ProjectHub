@@ -83,7 +83,6 @@ toggleButton.Position = UDim2.new(0.5, -100, 0.9, -25)
 toggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Đỏ
 toggleButton.MouseButton1Click:Connect(function()
   isToggled = not isToggled -- Đổi trạng thái khi nút được ấn
-  toggleRoll()
 if isToggled then
   -- Nếu trạng thái bật
   toggleButton.Text = "Auto-roll On"
