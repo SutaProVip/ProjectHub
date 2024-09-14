@@ -1,5 +1,4 @@
 _G.isRolling = false
-sellunit()
 function sellunit()
   if _G.autosellRare == true then
     game.StarterGui:SetCore("SendNotification", {
@@ -39,6 +38,7 @@ function sellunit()
     })
   end
 end
+sellunit()
 function roll()
   while _G.isRolling do
     if _G.autorollx10 == true then
