@@ -85,10 +85,12 @@ toggleButton.MouseButton1Click:Connect(function()
   isToggled = not isToggled -- Đổi trạng thái khi nút được ấn
 if isToggled then
   -- Nếu trạng thái bật
+  toggleRoll()
   toggleButton.Text = "Auto-roll On"
   toggleButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Xanh lục
 else
   -- Nếu trạng thái tắt
+  toggleRoll()
   toggleButton.Text = "Auto-roll Off"
   toggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Đỏ
  end
