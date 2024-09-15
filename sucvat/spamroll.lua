@@ -146,7 +146,7 @@ local isToggled = false -- Biến để theo dõi trạng thái của nút
 screenGui.Parent = game.CoreGui
 toggleButton.Parent = screenGui
 toggleButton.Text = "Auto-roll"
-toggleButton.Size = UDim2.new(0, 200, 0, 50)
+toggleButton.Size = UDim2.new(0, 50, 0, 30)
 toggleButton.Position = UDim2.new(0.5, -100, 0.9, -25)
 -- Màu ban đầu (trạng thái tắt)
 toggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0) -- Đỏ
